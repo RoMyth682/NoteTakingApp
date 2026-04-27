@@ -145,8 +145,8 @@ Powered by **Upstash Redis** with a sliding window algorithm:
 | Config | Value |
 |--------|-------|
 | Strategy | Sliding Window |
-| Limit | 10 requests |
-| Window | 20 seconds |
+| Limit | 100 requests |
+| Window | 60 seconds |
 | Scope | All API endpoints |
 
 When rate limited, the app returns a `429` status. The frontend handles this gracefully — the UI never resets or goes blank, and a toast notification is shown to the user.
